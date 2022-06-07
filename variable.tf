@@ -9,7 +9,7 @@ variable "region" {
 }
 
 variable "vpc-cidr" {
-  default     = "4.7.0.0/16"
+  default     = "4.7.0.0/16"#starts with 4 for security benefit
   description = "VPC CIDR BLOCK"
   type        = string
 }
@@ -47,7 +47,7 @@ variable "cidr_ab" {
         development     = "172.22"
         qa              = "172.24"
         staging         = "172.26"
-        production      = "4.7"
+        production      = "4.7"#DevOps is production environment
     }
 }
 
