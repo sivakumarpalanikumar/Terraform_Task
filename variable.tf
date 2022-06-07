@@ -69,5 +69,5 @@ locals {
 
 variable "environment" {
     type = string
-    description = "Options: development, qa, staging, production"
+    description = "Options: development, qa, staging, production"#for convinient access of project teams 
 }
