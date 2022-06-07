@@ -16,18 +16,3 @@ resource "aws_subnet" "privatesubnet" {
   }
 }
 
-/*locals {
-    private_subnets         = [
-        "${lookup(var.cidr_ab, var.environment)}.1.0/24",
-       
-        
-    ]
-
-    
-
-    public_subnets          = [
-        "${lookup(var.cidr_ab, var.environment)}.0.0/24",
-        
-        
-    ]
-}*/
