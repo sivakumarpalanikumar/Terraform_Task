@@ -11,6 +11,8 @@ resource "aws_vpc" "vpc" {
   
     #create tags for cost evaluation purpose
   tags                 = { 
-      Name = "terraform" 
+      name = "terraform"
+      env  = "prod"
+      
       }
 }
