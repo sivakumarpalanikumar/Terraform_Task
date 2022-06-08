@@ -1,4 +1,4 @@
-module "cognito_user_pool" {
+module "terraform-cognito_user_pool" {
   source  = "mineiros-io/cognito-user-pool/aws"
   version = "~> 0.9.0"
 
