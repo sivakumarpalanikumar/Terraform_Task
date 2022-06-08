@@ -18,6 +18,7 @@ resource "aws_route_table" "privateroutetable" {
 
 resource "aws_route_table_association" "publicroutetableassosiation" {
   
+  gateway_id     = aws_internet_gateway.internet-gateway.id
   subnet_id      = aws_subnet.publicsubnet.id
   route_table_id = aws_route_table.publicroutetable.id
 }
