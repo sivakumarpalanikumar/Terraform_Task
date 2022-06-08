@@ -40,7 +40,7 @@ module "cognito_user_pool" {
   mfa_configuration        = "ON"
   allow_software_mfa_token = true
 
-  password_minimum_length    = 40
+  password_minimum_length    = 5
   password_require_lowercase = true
   password_require_numbers   = true
   password_require_uppercase = true
@@ -73,6 +73,6 @@ module "cognito_user_pool" {
 
   tags = {
     name = "terraform"
-    environment= "production"
+    environment= "prod"
   }
 }
