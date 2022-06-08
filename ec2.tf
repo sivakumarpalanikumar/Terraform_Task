@@ -7,7 +7,7 @@ module "ec2_instance" {
   name = "instance-${each.key}"
 
   ami                    = ""
-  instance_type          = "t2.micro"
+  instance_type          = ""
   /*user_data =           << EOF
 		#! /bin/bash
         sudo su
