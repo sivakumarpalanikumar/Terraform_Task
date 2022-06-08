@@ -1,3 +1,5 @@
+#This is to create 2 route tables thats connects with internet gateway
+
 resource "aws_route_table" "publicroutetable" {#I should name both my public and route table
   vpc_id = aws_vpc.vpc.id
   tags = {
