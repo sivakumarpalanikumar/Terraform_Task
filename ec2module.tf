@@ -2,7 +2,7 @@ module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "~> "
 
-  name = "publicinstance"
+  name = "publicinstance"#bastion host
 
   ami                    = ""
   instance_type          = "t2.micro"
@@ -12,7 +12,7 @@ module "ec2_instance" {
   subnet_id              = ""
 
   tags = {
-    Terraform   = "true"
-    Environment = "production"
+    name   = "terraform"
+    environment = "prod"
   }
 }
